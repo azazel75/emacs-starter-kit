@@ -73,9 +73,10 @@
      ;; Activate pdbtrack in M-x shell buffers
      (add-hook 'comint-output-filter-functions #'python-pdbtrack-comint-output-filter-function)
 
-     (require 'company-jedi)
+     ;; Disable straight jedi, elpy will be used instead
+     ;; (require 'company-jedi)
 
-     (add-to-list 'company-backends 'company-jedi)
+     ;; (add-to-list 'company-backends 'company-jedi)
 
      (define-key python-mode-map [C-return] #'esk/python-split-string)
      (define-key python-mode-map (kbd "C-c +") #'esk/python-add-symbol-to-__all__)

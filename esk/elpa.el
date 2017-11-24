@@ -12,14 +12,16 @@
 (defvar esk/packages
   (list
    'company
-   'company-jedi
+   ;; Disable straight jedi, elpy will be used instead
+   ;; 'company-jedi
    'darcsum
    'dash
    'erc-hl-nicks
    'expand-region
    'flx-ido
    'iedit
-   'jedi-core
+   ;; Disable straight jedi, elpy will be used instead
+   ;; 'jedi-core
    'js2-mode
    'json-mode
    'magit
